@@ -1,0 +1,189 @@
+/* Estilos para la sección Nosotros */
+.seccion-nosotros {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Un tono gris claro de fondo */
+    text-align: center;
+}
+
+.seccion-nosotros .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.titulo-seccion {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.nosotros-introduccion p,
+.nosotros-historia p,
+.nosotros-enfoque p,
+.nosotros-llamada-accion p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Misión y Visión - Diseño Lado a Lado en pantallas grandes */
+.nosotros-mision-vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.nosotros-mision-vision .mision,
+.nosotros-mision-vision .vision {
+    flex: 1 1 45%; /* Ocupan casi la mitad del ancho */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Espacio entre ellos en pantallas pequeñas */
+}
+
+.nosotros-mision-vision h3 {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.nosotros-mision-vision p {
+    color: #777;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Equipo - Diseño en Grid */
+.nosotros-equipo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.nosotros-equipo h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.equipo-miembros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.equipo-miembros .miembro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.equipo-miembros h4 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.equipo-miembros .cargo {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+/* Llamada a la Acción */
+.nosotros-llamada-accion {
+    text-align: center;
+}
+
+.nosotros-llamada-accion .boton {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.nosotros-llamada-accion .boton:hover {
+    background-color: #1c5a8a;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .titulo-seccion {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+    }
+
+    .nosotros-introduccion p,
+    .nosotros-historia p,
+    .nosotros-enfoque p,
+    .nosotros-llamada-accion p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .nosotros-mision-vision .mision,
+    .nosotros-mision-vision .vision {
+        flex: 1 1 100%; /* Ocupan todo el ancho en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
+    .nosotros-equipo h3 {
+        font-size: 1.6em;
+        margin-bottom: 15px;
+    }
+
+    .equipo-miembros {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .equipo-miembros .miembro {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-seccion {
+        font-size: 2em;
+    }
+
+    .nosotros-introduccion p,
+    .nosotros-historia p,
+    .nosotros-enfoque p,
+    .nosotros-llamada-accion p {
+        font-size: 0.9em;
+    }
+
+    .nosotros-mision-vision h3 {
+        font-size: 1.3em;
+    }
+
+    .nosotros-equipo h3 {
+        font-size: 1.4em;
+    }
+
+    .equipo-miembros h4 {
+        font-size: 1.1em;
+    }
+
+    .nosotros-llamada-accion .boton {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

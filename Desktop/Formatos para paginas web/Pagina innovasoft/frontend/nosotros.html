@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNOVASOFT - Servicios y Productos de Software</title>
+    <link rel="stylesheet" href="servicio2.css">
+    <link rel="stylesheet" href="nosotros.css">
+</head>
+<body>
+
+    <section id="nosotros" class="seccion-nosotros">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Sobre Nosotros</h2>
+
+            <div class="nosotros-introduccion">
+                <p>En INNOVASOFT, somos una empresa de software apasionada por brindar soluciones tecnológicas integrales y a la medida para empresas de todos los tamaños. Nos especializamos en el diseño de páginas web impactantes y el desarrollo de sistemas de información personalizados, creados para optimizar tus operaciones y alcanzar tus objetivos de manera más eficiente.</p>
+            </div>
+
+            <div class="nosotros-mision-vision">
+                <div class="mision">
+                    <h3>Nuestra Misión</h3>
+                    <p>Proporcionar soluciones de software a la vanguardia de la tecnología actual, integrando la potencia de la Inteligencia Artificial para crear automatizaciones y procesos inteligentes. Buscamos agilizar el rendimiento de las empresas, permitiéndoles alcanzar sus metas con una eficiencia sin precedentes.</p>
+                </div>
+                <div class="vision">
+                    <h3>Nuestra Visión</h3>
+                    <p>Para el año 2030, aspiramos a ser reconocidos como pioneros en la tecnología del desarrollo y análisis de software, liderando la integración de la Inteligencia Artificial. Nuestra visión es articular de manera innovadora CRMs y asistentes virtuales inteligentes en plataformas web y sistemas de información, redefiniendo la interacción digital y la gestión empresarial.</p>
+                </div>
+            </div>
+
+            <div class="nosotros-historia">
+                <h3>Nuestra Historia</h3>
+                <p>INNOVASOFT surge de una visión clara: la creciente necesidad del mundo empresarial de automatizar procesos y articularlos de manera inteligente con sus sistemas de información. Esta idea, desde su concepción, se presenta como una promesa de futuro, impulsando una nueva era en el desarrollo de software empresarial de la mano de la Inteligencia Artificial y la gestión de relaciones con el cliente (CRM).</p>
+            </div>
+
+            <div class="nosotros-equipo">
+                <h3>Nuestro Equipo</h3>
+                <div class="equipo-miembros">
+                    <div class="miembro">
+                        <h4>Luis Eduardo Arévalo Ramírez</h4>
+                        <p class="cargo">Presidente & Jefe de Programación Frontend, Backend y base de datos</p>
+                        <p class="cargo">correo: luisarevaloramirez3@gmail.com</p>
+                        <p class="cargo">WhatsApp: 3219372980</p>
+                    </div>
+                    <div class="miembro">
+                        <h4>Bellanith Camacho Mendoza</h4>
+                        <p class="cargo">Jefe de Marketing</p>
+                        <p class="cargo">WhatsApp: 3223865601</p>
+                    </div>
+                    <div class="miembro">
+                        <h4>María Violeta Arévalo Camacho</h4>
+                        <p class="cargo">Jefe de Diseño</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="nosotros-enfoque">
+                <h3>Nuestro Enfoque</h3>
+                <p>En INNOVASOFT, entendemos que cada empresa es única. Por eso, nuestro enfoque se centra en ofrecer soluciones de software totalmente personalizadas, diseñadas específicamente para satisfacer tus necesidades particulares. La integración estratégica de la Inteligencia Artificial en nuestros desarrollos nos permite ofrecer automatizaciones inteligentes que optimizan procesos, mejoran la toma de decisiones y brindan una ventaja competitiva real.</p>
+            </div>
+
+            <div class="nosotros-llamada-accion">
+                <p>¿Listo para transformar tu empresa con la innovación de INNOVASOFT?</p>
+                <a href="#contacto" class="boton">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-btn');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                navLinks.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Script para hacer scroll al inicio si se llega con un hash
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.location.hash === '#servicios-seccion' || window.location.hash === '#productos-seccion' || window.location.hash === '#nosotros') {
+                window.scrollTo(0, 0);
+            }
+        });
+    </script>
+
+</body>
+</html>

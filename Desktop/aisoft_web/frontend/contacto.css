@@ -1,0 +1,148 @@
+/* Estilos para la sección Contáctanos */
+.seccion-contacto {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Un tono gris claro de fondo */
+    text-align: center;
+}
+
+.seccion-contacto .contenedor {
+    max-width: 800px; /* Reducimos el ancho máximo para centrar mejor el formulario */
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.titulo-seccion {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.introduccion {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.formulario-contacto {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alineamos el texto del formulario a la izquierda */
+}
+
+.formulario-contacto h3 {
+    color: #2980b9;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    text-align: center; /* Centramos el título del formulario */
+}
+
+.form-grupo {
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    display: block;
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-grupo input[type="text"],
+.form-grupo input[type="email"],
+.form-grupo input[type="tel"],
+.form-grupo textarea {
+    width: calc(100% - 20px); /* Ancho completo con un poco de padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.form-grupo textarea {
+    resize: vertical; /* Permite al usuario ajustar la altura del textarea */
+}
+
+.formulario-contacto .boton {
+    display: inline-block;
+    background-color: #27ae60; /* Un tono verde para el botón de enviar */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    box-sizing: border-box;
+    width: 100%; /* El botón ocupa todo el ancho del formulario */
+}
+
+.formulario-contacto .boton:hover {
+    background-color: #218c52;
+}
+
+.mensaje-exito {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .titulo-seccion {
+        font-size: 2.2em;
+        margin-bottom: 25px;
+    }
+
+    .introduccion {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .formulario-contacto {
+        padding: 20px;
+    }
+
+    .formulario-contacto h3 {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+
+    .form-grupo label {
+        font-size: 0.95em;
+    }
+
+    .form-grupo input[type="text"],
+    .form-grupo input[type="email"],
+    .form-grupo input[type="tel"],
+    .form-grupo textarea,
+    .formulario-contacto .boton {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-seccion {
+        font-size: 2em;
+    }
+
+    .introduccion {
+        font-size: 0.9em;
+    }
+
+    .formulario-contacto h3 {
+        font-size: 1.4em;
+    }
+}

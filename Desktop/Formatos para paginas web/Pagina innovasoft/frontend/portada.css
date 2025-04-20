@@ -1,0 +1,580 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+/* Estilos del contenedor del header (sin cambios) */
+.contenedor-header {
+    background-color: black; /* Color de fondo del contenedor */
+    padding: 15px 20px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Estilo del header (sin cambios) */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 40%;
+    max-width: 250px;
+    height: auto;
+  }
+  
+  /* Navegación (sin cambios) */
+  nav {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  /* Botones */
+  .nav-btn {
+    background-color: #ffbf00; /* Fondo negro */
+    border: 1px solid white; /* Contorno blanco */
+    color: black; /* Texto blanco */
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transición para el fondo y el color */
+  }
+  
+  .nav-btn:hover {
+    background-color: #333; /* Un negro más oscuro al hacer hover (opcional) */
+    color: white;
+  }
+  
+  .nav-btn.clicked {
+    background-color: white; /* Fondo blanco al hacer clic */
+    color: black; /* Texto negro al hacer clic */
+  }
+  
+  /* Responsividad del Header y Navegación (sin cambios) */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+    }
+  
+    .logo {
+      width: 80%;
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
+  
+    nav {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .nav-btn {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-btn {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Mantiene la separación en pantallas grandes */
+    min-height: 40vh; /* Usar min-height para asegurar altura mínima */
+    background-color: rgb(24, 126, 6);
+    padding: 20px 5%; /* Añadir padding vertical */
+}
+
+/* Estilo del texto */
+.hero-text {
+    max-width: 600px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem; /* Reducir el tamaño en general */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1rem; /* Reducir el tamaño en general */
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Contenedor de imágenes */
+.hero-images {
+    display: flex;
+    gap: 50px; /* Reducir el gap en general */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* Tamaño de las imágenes */
+.hero-images img {
+    width: 250px; /* Reducir el tamaño base */
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero .hero-images .ancho-imagen-derecha {
+    width: 250px; /* Reducir el tamaño base */
+    height: auto;
+}
+
+/* Media Queries para la sección Hero */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Apilar texto e imágenes */
+        text-align: center; /* Centrar el texto */
+        padding: 20px;
+    }
+
+    .hero-text {
+        max-width: 100%; /* El texto ocupa todo el ancho */
+        margin-bottom: 20px; /* Espacio entre texto e imágenes */
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    .hero-images {
+        justify-content: center; /* Centrar las imágenes */
+        gap: 15px;
+    }
+
+    .hero-images img {
+        width: 120px;
+    }
+
+    .hero .hero-images .ancho-imagen-derecha {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-images {
+        flex-direction: column; /* Apilar las imágenes en móviles */
+        align-items: center; /* Centrar las imágenes apiladas */
+        gap: 10px;
+    }
+
+    .hero-images img {
+        width: 80%; /* Las imágenes ocupan un porcentaje del ancho */
+        max-width: 200px; /* Evitar que crezcan demasiado */
+    }
+
+    .hero .hero-images .ancho-imagen-derecha {
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+
+
+.seccion-imagen-izquierda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px;
+    color: white; /* Asegúrate de que el color del texto esté aquí si no se hereda */
+}
+
+.sird-texto2 {
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 20px;
+    max-width: 50%; /* Se mantiene para pantallas más grandes */
+}
+
+.sird-texto2 h2 {
+    font-size: 2rem; /* Ajusta el tamaño del encabezado */
+    margin-bottom: 15px;
+}
+
+.sird-texto2 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.sird-texto2 li {
+    margin-bottom: 5px;
+}
+
+.sird-texto2 .boton-destacado {
+    /* Estilos para el botón (ajústalos según tu diseño) */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.sird-texto2 .boton-destacado:hover {
+    background-color: #0056b3;
+}
+
+.sird-imagen {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.sird-imagen img {
+    width: 90%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Opcional: añadir bordes redondeados a la imagen */
+}
+
+/* Media Query para pantallas más pequeñas (tablets, por ejemplo, hasta 768px de ancho) */
+@media (max-width: 768px) {
+    .seccion-imagen-izquierda {
+        flex-direction: column; /* Apilar el texto y la imagen */
+        text-align: center; /* Centrar el contenido */
+        gap: 20px; /* Reducir el espacio entre elementos apilados */
+        padding: 20px; /* Reducir el padding general */
+    }
+
+    .sird-texto2 {
+        max-width: 100%; /* El texto ocupa todo el ancho */
+        padding: 15px;
+        font-size: 1.1rem; /* Reducir ligeramente el tamaño del texto */
+    }
+
+    .sird-imagen {
+        width: 80%; /* La imagen ocupa un porcentaje del ancho */
+        margin: 0 auto; /* Centrar la imagen */
+    }
+}
+
+/* Media Query para pantallas aún más pequeñas (móviles, por ejemplo, hasta 480px de ancho) */
+@media (max-width: 480px) {
+    .sird-texto2 {
+        font-size: 1rem; /* Reducir aún más el tamaño del texto */
+        padding: 10px;
+    }
+
+    .sird-texto2 h2 {
+        font-size: 1.7rem; /* Reducir el tamaño del encabezado en móviles */
+    }
+
+    .sird-imagen {
+        width: 95%; /* La imagen ocupa casi todo el ancho en móviles */
+    }
+}
+
+
+
+/* Estilos para la sección de redes sociales */
+.redes-sociales {
+    background-color:white; /* Un fondo oscuro para contrastar - ¡ajusta el color! */
+    color:black;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.redes-sociales h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.redes-sociales p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.iconos-redes a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.iconos-redes a:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.iconos-redes img {
+    width: 40px; /* Ajusta el tamaño de los iconos */
+    height: 40px;
+    display: block; /* Evita espaciado extra debajo de la imagen */
+}
+
+/* Media Query para pantallas más pequeñas (tablets, hasta 768px) */
+@media (max-width: 768px) {
+    .redes-sociales {
+        padding: 30px 15px;
+    }
+
+    .redes-sociales h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .redes-sociales p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .iconos-redes {
+        gap: 20px;
+    }
+
+    .iconos-redes img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Media Query para pantallas aún más pequeñas (móviles, hasta 480px) */
+@media (max-width: 480px) {
+    .redes-sociales h2 {
+        font-size: 1.6rem;
+    }
+
+    .iconos-redes {
+        gap: 15px;
+    }
+
+    .iconos-redes img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+.hero-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    min-height: 1vh;
+    background-color:black;
+  }
+  
+  .hero-contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .texto {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .texto h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color:white;
+  }
+  
+  .texto p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .boton {
+    background-color:  #ffbf00;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: #00a3c8;
+    transform: translateY(-3px);
+  }
+  
+  /* Ilustración SVG */
+  .ilustracion {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  
+  /* Animación de entrada */
+  .animado {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-contenido {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .ilustracion {
+      margin-top: 2rem;
+    }
+  }
+  
+
+  
+.hero-oscuro {
+    background-color: black;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+  }
+  
+  .contenedor-oscuro {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* Animación suave */
+  .animar {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: aparecer 1s ease-out forwards;
+  }
+  
+  @keyframes aparecer {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilos del texto */
+  .texto-oscuro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #f4f4f4;
+  }
+  
+  .texto-oscuro h1 span {
+    color: #00d9ff;
+  }
+  
+  .texto-oscuro p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 2rem;
+  }
+  
+  /* Botón animado */
+  .boton-oscuro {
+    display: inline-block;
+    background-color: #ffbf00;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .boton-oscuro:hover {
+    background-color: #00a3c8;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .texto-oscuro h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  @keyframes aparecer {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .contenedor-titulo {
+    background-color: #00a3c8; /* Color de fondo del contenedor (gris oscuro) */
+    padding: 20px; /* Espacio interno alrededor del SVG */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+    display: flex; /* Para centrar el SVG dentro del contenedor */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente (si el contenedor tiene una altura definida) */
+    margin: 20px auto; /* Margen alrededor del contenedor y centrado horizontal */
+  }
+  
+  @keyframes aparecer {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .texto-animado {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease-out forwards 0.5s;
+    fill: #ffffff !important; /* Aseguramos que el color del texto sea blanco */
+  }

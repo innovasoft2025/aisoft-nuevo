@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNOVASOFT - Servicios de Software a Medida</title>
+    <link rel="stylesheet" href="servicio2.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <img src="logo horizontal3.png" alt="Logo de la empresa" class="logo">
+            <nav>
+                <a href="#servicios-seccion" class="nav-btn active">Servicios</a>
+                <a href="productos.html" class="nav-btn">Productos</a>
+                <a href="nosotros.html" class="nav-btn">Nosotros</a>
+                <a href="portada.html" class="boton-inicio">Inicio</a>
+
+            </nav>
+        </header>
+    </div>
+
+
+    
+    <div class="contenedor-titulo">
+        <svg id="titulo-animado" width="600" height="80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="transparent" /> <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="texto-animado" fill="#ffffff" style="font-size: 2em; font-weight: bold;">
+                Nuestros Servicios
+            </text>
+        </svg>
+    </div>
+
+    <section id="servicios-seccion" class="seccion-servicios">
+        <div class="contenedor">
+            <h2>¿Qué Ofrecemos?</h2>
+            <div class="lista-servicios">
+                <div class="servicio">
+                    <img src="web.png" alt="Diseño de Páginas Web">
+                    <h3>Diseño de Páginas Web a la Medida y Personalizadas</h3>
+                    <p>Creamos sitios web únicos y optimizados para atraer clientes, aumentar tu credibilidad y expandir tu negocio en línea.</p>
+                </div>
+                <div class="servicio">
+                    <img src="ecommerce.png" alt="E-commerce">
+                    <h3>Desarrollo de E-commerce</h3>
+                    <p>Implementamos tiendas online completas y personalizadas para que puedas vender tus productos y servicios en línea de forma eficiente.</p>
+                </div>
+                <div class="servicio">
+                    <img src="educacion.png" alt="Sistemas de Información Escolares">
+                    <h3>Sistemas de Información Escolares (a Medida)</h3>
+                    <p>Desarrollamos plataformas integrales para la gestión académica, administrativa y comunicativa de instituciones educativas.</p>
+                </div>
+                <div class="servicio">
+                    <img src="contable2.png" alt="Sistemas de Información Contables (a Medida)">
+                    <h3>Sistemas de Información Contables (a Medida)</h3>
+                    <p>Soluciones de software personalizadas para la gestión contable y financiera de tu empresa, optimizando procesos y la toma de decisiones.</p>
+                </div>
+                <div class="servicio">
+                    <img src="sistema.png" alt="Sistemas de Información en General (a Medida)">
+                    <h3>Sistemas de Información en General (a Medida)</h3>
+                    <p>Creamos software específico para resolver las necesidades únicas de tu negocio, desde la gestión de inventario hasta la automatización de flujos de trabajo.</p>
+                </div>
+                <div class="servicio">
+                    <img src="IA.png" alt="Automatizaciones con IA">
+                    <h3>Automatizaciones con IA</h3>
+                    <p>Implementamos soluciones de inteligencia artificial para automatizar tareas, optimizar procesos y mejorar la eficiencia de tu empresa.</p>
+                </div>
+                <div class="servicio">
+                    <img src="AIA.png" alt="Agentes de IA (Personalizados)">
+                    <h3>Agentes de IA (Personalizados)</h3>
+                    <p>Desarrollamos agentes de inteligencia artificial a medida para interactuar con tus clientes, automatizar la atención y mejorar la experiencia del usuario.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-btn');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                navLinks.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

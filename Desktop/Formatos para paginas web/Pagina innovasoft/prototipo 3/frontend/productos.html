@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNOVASOFT - Productos de Software Innovadores</title>
+    <link rel="stylesheet" href="servicio2.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <img src="logo horizontal3.png" alt="Logo de la empresa" class="logo">
+            <nav>
+                <a href="servicio2.html" class="nav-btn">Servicios</a>
+                <a href="productos.html" class="nav-btn active">Productos</a>
+                <a href="nosotros.html" class="nav-btn">Nosotros</a>
+                <a href="portada.html" class="boton-inicio">Inicio</a>
+            </nav>
+        </header>
+    </div>
+
+
+    
+    <div class="contenedor-titulo">
+        <svg id="titulo-animado" width="600" height="80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="transparent" /> <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="texto-animado" fill="#ffffff" style="font-size: 2em; font-weight: bold;">
+                Nuestros Productos
+            </text>
+        </svg>
+    </div>
+
+    <section id="productos-seccion" class="seccion-servicios">
+        <div class="contenedor">
+            <h2>Nuestros Productos Innovadores</h2>
+            <div class="lista-servicios">
+                <div class="servicio">
+                    <img src="empresarial.png" alt="Software de Gestión Empresarial">
+                    <h3>Software de Gestión Empresarial Integral</h3>
+                    <p>Potencia tu negocio con nuestra solución completa para la gestión de recursos, finanzas, clientes y operaciones. ¡Todo en un solo lugar!</p>
+                </div>
+                <div class="servicio">
+                    <img src="crm.png" alt="Sistema CRM Inteligente">
+                    <h3>Sistema CRM Inteligente</h3>
+                    <p>Construye relaciones sólidas con tus clientes. Nuestro CRM te ayuda a gestionar interacciones, automatizar ventas y mejorar la atención al cliente.</p>
+                </div>
+                <div class="servicio">
+                    <img src="analisis.png" alt="Plataforma de Analítica de Datos">
+                    <h3>Plataforma de Analítica de Datos Avanzada</h3>
+                    <p>Transforma tus datos en información valiosa. Obtén insights profundos para tomar decisiones estratégicas y optimizar tu rendimiento.</p>
+                </div>
+                <div class="servicio">
+                    <img src="Aplicacion.png" alt="Aplicación Móvil Empresarial">
+                    <h3>Aplicación Móvil Empresarial Personalizada</h3>
+                    <p>Lleva tu negocio a la palma de la mano de tus clientes y empleados. Desarrollamos aplicaciones móviles a medida para tus necesidades.</p>
+                </div>
+                <div class="servicio">
+                    <img src="marketing.png" alt="Herramientas de Automatización de Marketing">
+                    <h3>Herramientas de Automatización de Marketing Potentes</h3>
+                    <p>Aumenta tu alcance y eficiencia en marketing. Automatiza campañas, segmenta audiencias y mide resultados de manera inteligente.</p>
+                </div>
+
+                <div class="servicio">
+                    <img src="empresa.png" alt="Plataforma de Colaboración en la Nube">
+                    <h3>Plataforma de Colaboración Empresarial en la Nube</h3>
+                    <p>Fomenta el trabajo en equipo y la comunicación eficiente. Nuestra plataforma facilita la colaboración segura y en tiempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-btn');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                navLinks.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

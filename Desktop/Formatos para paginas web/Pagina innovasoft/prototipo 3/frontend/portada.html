@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa</title>
+    <link rel="stylesheet" href="portada.css">
+</head>
+<body>
+  <div class="contenedor-header">
+    <header>
+      <img src="logo horizontal3.png" alt="Logo de la empresa" class="logo">
+      <nav>
+        <button class="nav-btn" id="boton-servicios">Servicios</button>
+        <a href="productos.html" class="nav-btn">Productos</a>
+        <a href=nosotros.html class="nav-btn">Nosotros</a>
+        <a href="#inicio" class="nav-btn">Inicio</a>
+      </nav>
+    </header>
+  </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const botonServicios = document.getElementById('boton-servicios');
+
+            if (botonServicios) {
+                botonServicios.addEventListener('click', function() {
+                    window.location.href = 'servicio2.html#servicios-seccion';
+                });
+            }
+        });
+    </script>
+    
+    <section class="hero-svg">
+        <div class="hero-contenido">
+          <div class="texto animado">
+            <h1>Transforma tu Empresa con la Innovación Digital y la IA</h1>
+            <p>Impulsamos la transformación digital de tu empresa. Ofrecemos soluciones de software a medida para optimizar los procesos de tu empresa y alcanzar tus objetivos.</p>
+            <a href="contacto.html" class="boton">Contáctanos</a>
+          </div>
+          <div class="ilustracion">
+            <!-- SVG animado -->
+              
+
+
+            <svg viewBox="0 0 500 500" style="width: 100%; height: auto; max-width: 500px;" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="circleClip">
+                    <circle cx="250" cy="250" r="200" />
+                  </clipPath>
+                </defs>
+              
+                <!-- Círculo oscilante -->
+                <circle cx="250" cy="250" r="200" fill=black>
+                  <animate attributeName="r" values="200;220;200" dur="4s" repeatCount="indefinite"/>
+                </circle>
+              
+                <!-- Imagen centrada, animando desde el centro -->
+                <image
+                  href="INNOVA.png"
+                  x="50"
+                  y="50"
+                  width="400"
+                  height="400"
+                  clip-path="url(#circleClip)"
+                  preserveAspectRatio="xMidYMid slice"
+                  transform-origin="center"
+                  transform-box="fill-box">
+                  
+                  <animateTransform
+                    attributeName="transform"
+                    type="scale"
+                    values="1;1.1;1"
+                    dur="4s"
+                    repeatCount="indefinite"/>
+              
+                  <animateTransform
+                    attributeName="transform"
+                    type="translate"
+                    values="0 0; 0 -10; 0 0"
+                    dur="4s"
+                    repeatCount="indefinite"
+                    additive="sum"/>
+                </image>
+              </svg>
+        
+                      
+              
+
+          </div>
+        </div>
+      </section>
+
+      <div class="contenedor-titulo">
+        <svg id="titulo-animado" width="600" height="80" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="100%" fill="transparent" /> <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="texto-animado" fill="#ffffff" style="font-size: 2em; font-weight: bold;">
+            Productos y Servicios
+          </text>
+        </svg>
+      </div>
+    
+    <div class="seccion-imagen-izquierda">
+        <div class="sird-imagen">
+            <img src="diseño web.gif" alt="Imagen destacada">
+        </div>
+        <div class="sird-texto2">
+            <h2>Diseño de Paginas Web</h2>
+            <p>No dejes que tu empresa se quede atrás. Nosotros creamos páginas web personalizadas y optimizadas para ayudarte a alcanzar el éxito más rápido, invierte en tu crecimiento hoy mismo. </p>
+            <ul>
+              <li>Atrae más clientes</li>
+              <li>Aumenta tu credibilidad y confianza</li>
+              <li>Expande tu negocio 24/7</li>
+            </ul>
+            <p>Contáctanos y llevemos tu negocio al siguiente nivel!</p>
+            <br>
+            <button class="boton-destacado" id="boton-mas-info">Más Información</button>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                  const botonMasInfo = document.getElementById('boton-mas-info');
+          
+                  if (botonMasInfo) {
+                      botonMasInfo.addEventListener('click', function() {
+                          // Aquí debes especificar la URL a la que quieres redirigir
+                          window.location.href = 'servicio2.html';
+                      });
+                  }
+              });
+          </script>
+          </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="seccion-imagen-izquierda">
+        <div class="sird-imagen">
+            <img src="gestion.gif" alt="Imagen destacada">
+          </div>
+        <div class="sird-texto2">
+            <h2>Optimiza la gestión de tu negocio con un software contable inteligente </h2>
+            <p>Olvídate de los cálculos manuales y los errores en la contabilidad, es momento de modernizar tu empresa con un software contable ágil, preciso y fácil de usar.  </p>
+            <ul>
+                <li>Automatiza tus finanzas y ahorra tiempo</li>
+                <li>Gestiona ingresos, gastos y facturación en un solo lugar</li>
+                <li>Accede a reportes detallados para tomar mejores decisiones</li>
+            </ul>
+            <p>Haz que la contabilidad trabaje para ti, no al revés, contáctanos y llevemos tu negocio al siguiente nivel!</p>
+            <br>
+            <button class="boton-destacado" id="boton-productos">Ir a Productos</button>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                  const botonProductos = document.getElementById('boton-productos');
+          
+                  if (botonProductos) {
+                      botonProductos.addEventListener('click', function() {
+                          // Redirige a la sección con el id "productos-seccion" en la misma página
+                          window.location.href = 'productos.html';
+                      });
+                  }
+              });
+          </script>
+        </div>
+
+      </div>
+
+
+      <hr>
+
+
+      <div class="seccion-imagen-izquierda">
+        <div class="sird-imagen">
+            <img src="educacion.gif" alt="Imagen destacada">
+          </div>
+        <div class="sird-texto2">
+            <h2>Gestiona todos los Procesos logisticos de una institucion educativa con nuestro sistema de gestion escolar</h2>
+            <p>Ten el control total de la información académica de tu colegio de forma fácil y eficiente. Descubre nuestros sistemas de informacion integrales.  </p>
+            <ul>
+                <li>Ahorro Significativo de Tiempo y Reducción de la Carga Administrativa</li>
+                <li>Mejora en la Comunicación y la Transparencia con la Comunidad Educativa</li>
+                <li>Gestiona tareas, notas, asistencias, infomes academicos y mucho mas de manera rapida y eficiente</li>
+                <li>Mayor Control y Acceso a Información Crucial para la Toma de Decisiones</li>
+            </ul>
+            <p>Impulsa la transformación digital de tu colegio hoy. ¡Contáctanos y descubre el poder de nuestro sistema en la gestión escolar!</p>
+            <br>
+            <button class="boton-destacado">Más Información</button>
+        </div>
+
+      </div>
+
+  
+      <hr>
+
+      <section class="hero hero-oscuro">
+        <div class="contenedor-oscuro">
+          <div class="texto-oscuro animar">
+            <h1>Conecta tu <span>empresa</span> con el futuro digital</h1>
+            <p>Desarrollamos soluciones inteligentes que automatizan tus procesos y potencian tu crecimiento.</p>
+            <a href="#servicios" class="boton-oscuro">Ver </a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="redes-sociales">
+        <h2>¡Síguenos en nuestras redes!</h2>
+        <p>Mantente al tanto de nuestras últimas novedades, promociones y contenido exclusivo.</p>
+        <div class="iconos-redes">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Facebook">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en TikTok">
+                <img src="tiktok.png" alt="TikTok">
+            </a>
+        </div>
+    </section>
+      
+    <script src="portada.js"></script>
+</body>
+</html>
+
+
+

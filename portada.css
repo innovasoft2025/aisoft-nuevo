@@ -578,3 +578,20 @@ body {
     animation: aparecer 1s ease-out forwards 0.5s;
     fill: #ffffff !important; /* Aseguramos que el color del texto sea blanco */
   }
+
+  .boton-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #27d4ff;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-volver:hover {
+    background-color: #f4e32b;
+  }

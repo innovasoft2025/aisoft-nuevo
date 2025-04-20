@@ -373,3 +373,39 @@ nav a.active {
         font-size: 0.9em;
     }
 }
+
+/* ... tus estilos CSS existentes ... */
+
+.servicio .boton-mas-detalles {
+    display: inline-block;
+    background-color: #00a3c8; /* Un color destacado para el botón */
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.servicio .boton-mas-detalles:hover {
+    background-color: #ffbf00; /* Un color de hover diferente */
+    color: black;
+}
+
+/* Asegurar la responsividad del botón */
+@media (max-width: 768px) {
+    .servicio .boton-mas-detalles {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicio .boton-mas-detalles {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}

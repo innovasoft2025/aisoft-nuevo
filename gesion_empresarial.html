@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software de Gestión Empresarial Integral - AISOFT</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="diseño-web.css">
+    <link rel="stylesheet" href="portada.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <button class="mobile-menu-btn" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="dashboard">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="teacher-avatar">
+                    <img src="logoaisoft.png" alt="Logo de tu emprendimiento">
+                </div>
+                <h2>Gestión Empresarial Integral</h2>
+            </div>
+            <ul class="menu-items">
+                <li class="active" onclick="showSection('inicio-gestion')">
+                    <i class="fas fa-briefcase menu-icon"></i>
+                    <span>¿Qué es nuestro Software de Gestión Empresarial?</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('caracteristicas-gestion')">
+                    <i class="fas fa-list-ul menu-icon"></i>
+                    <span>Características Principales</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('beneficios-gestion')">
+                    <i class="fas fa-chart-line menu-icon"></i>
+                    <span>Beneficios para tu Negocio</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('modulos-gestion')">
+                    <i class="fas fa-cubes menu-icon"></i>
+                    <span>Módulos Incluidos</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('contacto-gestion')">
+                    <i class="fas fa-handshake menu-icon"></i>
+                    <span>¡Impulsa tu Gestión Empresarial!</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="goBack()">
+                    <i class="fas fa-arrow-left menu-icon"></i>
+                    <span>Volver a Productos</span>
+                    <div class="hover-effect"></div>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div id="inicio-gestion" class="section active-section">
+                <div class="servicio-banner">
+                    <h1>Software de Gestión Empresarial Integral: El Centro de tu Operación</h1>
+                    <p>Optimiza cada aspecto de tu negocio con nuestra solución de software integral. Desde la gestión de recursos humanos hasta la contabilidad, pasando por la relación con los clientes y la administración de inventario, nuestro software está diseñado para brindarte una visión unificada y un control total sobre tu empresa.</p>
+                    <p><strong>¿Cansado de usar múltiples sistemas desconectados? ¡Descubre cómo nuestra plataforma puede simplificar tus procesos, aumentar la eficiencia y potenciar el crecimiento de tu negocio!</strong></p>
+                </div>
+            </div>
+
+            <div id="caracteristicas-gestion" class="section">
+                <h2>Características Principales de nuestro Software de Gestión Empresarial:</h2>
+                <ul class="proceso-lista">
+                    <li><strong>Gestión de Recursos Humanos (RRHH):</strong> Administración de empleados, nóminas, asistencia, vacaciones y más.</li>
+                    <li><strong>Gestión Financiera y Contabilidad:</strong> Control de ingresos, gastos, facturación, contabilidad general y reportes financieros.</li>
+                    <li><strong>Gestión de la Relación con los Clientes (CRM):</strong> Seguimiento de clientes potenciales, gestión de contactos, historial de interacciones y automatización de ventas.</li>
+                    <li><strong>Gestión de Inventario:</strong> Control de stock, seguimiento de productos, gestión de proveedores y alertas de inventario bajo.</li>
+                    <li><strong>Gestión de Proyectos:</strong> Planificación, seguimiento de tareas, asignación de recursos y colaboración en proyectos.</li>
+                    <li><strong>Generación de Informes y Analítica:</strong> Obtén insights valiosos sobre el rendimiento de tu negocio con informes personalizables y paneles de control intuitivos.</li>
+                    <li><strong>Automatización de Flujos de Trabajo:</strong> Define y automatiza procesos repetitivos para aumentar la eficiencia y reducir errores.</li>
+                    <li><strong>Seguridad y Acceso Basado en Roles:</strong> Protege la información de tu empresa y define permisos de acceso para diferentes usuarios.</li>
+                    <li><strong>Integración con Otras Herramientas:</strong> Conecta nuestro software con otras aplicaciones que ya utilizas para un flujo de trabajo más fluido.</li>
+                    <li><strong>Acceso en la Nube:</strong> Accede a tu información desde cualquier lugar y dispositivo con conexión a internet.</li>
+                </ul>
+            </div>
+
+            <div id="beneficios-gestion" class="section">
+                <h2>Beneficios Clave para tu Negocio:</h2>
+                <ul class="proceso-lista">
+                    <li><strong>Aumento de la Eficiencia Operacional:</strong> Automatiza tareas y optimiza flujos de trabajo, liberando tiempo para actividades estratégicas.</li>
+                    <li><strong>Mejor Toma de Decisiones:</strong> Accede a información precisa y en tiempo real para tomar decisiones informadas.</li>
+                    <li><strong>Reducción de Costos:</strong> Optimiza la gestión de recursos y reduce errores, lo que se traduce en ahorros significativos.</li>
+                    <li><strong>Mejora de la Comunicación y Colaboración:</strong> Facilita el flujo de información entre departamentos y equipos.</li>
+                    <li><strong>Mayor Satisfacción del Cliente:</strong> Gestiona mejor las relaciones con tus clientes y ofrece un servicio más personalizado.</li>
+                    <li><strong>Visión Integral del Negocio:</strong> Obtén una perspectiva completa del rendimiento de tu empresa en un solo lugar.</li>
+                    <li><strong>Escalabilidad y Flexibilidad:</strong> Adapta el software a medida que tu negocio crece y evoluciona.</li>
+                    <li><strong>Mayor Seguridad de la Información:</strong> Protege los datos críticos de tu empresa con medidas de seguridad robustas.</li>
+                </ul>
+            </div>
+
+            <div id="modulos-gestion" class="section">
+                <h2>Módulos Incluidos en nuestro Software Integral:</h2>
+                <div class="seccion-imagen-izquierda">
+                    <div class="sird-imagen">
+                        <img src="gestion_empresarial.png" alt="Módulos del Software de Gestión Empresarial">
+                    </div>
+                    <div class="sird-texto2">
+                        <p>Nuestro software de gestión empresarial está compuesto por módulos potentes e integrados:</p>
+                        <ul>
+                            <li><strong>Módulo de RRHH:</strong> Gestión completa del personal.</li>
+                            <li><strong>Módulo Financiero:</strong> Contabilidad, facturación y gestión de pagos.</li>
+                            <li><strong>Módulo CRM:</strong> Gestión de clientes y ventas.</li>
+                            <li><strong>Módulo de Inventario:</strong> Control de stock y almacén.</li>
+                            <li><strong>Módulo de Proyectos:</strong> Planificación y seguimiento de proyectos.</li>
+                            <li><strong>Módulo de Informes:</strong> Generación de reportes personalizados.</li>
+                            <li><strong>Módulo de Automatización:</strong> Configuración de flujos de trabajo automáticos.</li>
+                        </ul>
+                        <p>Cada módulo está diseñado para trabajar en conjunto, proporcionando una solución cohesiva y eficiente para la gestión de tu empresa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contacto-gestion" class="section">
+                <h2>¡Impulsa la Gestión de tu Empresa Hoy Mismo! Contáctanos:</h2>
+                <p>¿Listo para transformar la manera en que gestionas tu negocio? ¡Nuestro equipo está preparado para mostrarte cómo!</p>
+                <p>Solicita una demostración personalizada o contáctanos para obtener más información.</p>
+                <br>
+                <button class="boton-destacado" id="boton-contacto-gestion">Solicitar Demostración</button>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const botonContactoGestion = document.getElementById('boton-contacto-gestion');
+
+                        if (botonContactoGestion) {
+                            botonContactoGestion.addEventListener('click', function() {
+                                // Aquí debes especificar la URL de tu página de contacto o formulario de solicitud de demostración
+                                window.location.href = 'contacto.html?producto=gestion-empresarial'; // Ejemplo con parámetro
+                            });
+                        }
+                    });
+                </script>
+            </div>
+        </main>
+        <div class="overlay" id="mobile-overlay"></div>
+    </div>
+    <script src="diseño-web.js"></script>
+    <script>
+        // Función para volver a la página anterior (productos.html)
+        function goBack() {
+            window.location.href = 'productos.html';
+        }
+    </script>
+</body>
+</html>

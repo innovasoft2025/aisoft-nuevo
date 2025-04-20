@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Móvil Empresarial Personalizada - AISOFT: Tu Negocio, en la Palma de tu Mano</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="diseño-web.css">
+    <link rel="stylesheet" href="portada.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <button class="mobile-menu-btn" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="dashboard">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="teacher-avatar">
+                    <img src="logoaisoft.png" alt="Logo de tu emprendimiento">
+                </div>
+                <h2>Aplicación Móvil Empresarial Personalizada</h2>
+            </div>
+            <ul class="menu-items">
+                <li class="active" onclick="showSection('inicio-app')">
+                    <i class="fas fa-mobile-alt menu-icon"></i>
+                    <span>¿Listo para Conectar con tus Clientes en Cualquier Lugar?</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('caracteristicas-app')">
+                    <i class="fas fa-cog menu-icon"></i>
+                    <span>Funcionalidades que Impulsan tu Negocio, Directo al Móvil</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('beneficios-app')">
+                    <i class="fas fa-rocket menu-icon"></i>
+                    <span>Despega hacia el Futuro: Beneficios de una App Personalizada</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('proceso-app')">
+                    <i class="fas fa-puzzle-piece menu-icon"></i>
+                    <span>Creamos la App Perfecta para Ti: Nuestro Proceso Personalizado</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('contacto-app')">
+                    <i class="fas fa-handshake menu-icon"></i>
+                    <span>¡Lleva tu Negocio al Siguiente Nivel Móvil!</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="goBack()">
+                    <i class="fas fa-arrow-left menu-icon"></i>
+                    <span>Volver a Productos</span>
+                    <div class="hover-effect"></div>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div id="inicio-app" class="section active-section">
+                <div class="servicio-banner">
+                    <h1>Aplicación Móvil Empresarial Personalizada: El Poder de tu Marca, en el Bolsillo de tus Clientes</h1>
+                    <p>En la era digital, la movilidad no es solo una tendencia, es una necesidad. ¿Te imaginas poder conectar directamente con tus clientes en el momento y lugar exactos donde te necesitan? ¿Ofrecerles una experiencia única y personalizada que fortalezca su lealtad y aumente tus ventas? Con nuestra Aplicación Móvil Empresarial Personalizada, esa visión se convierte en realidad. **Pon el poder de tu negocio en la palma de la mano de tus clientes y empleados, abriendo un mundo de oportunidades para el crecimiento y la interacción.**</p>
+                    <p>Deja atrás las soluciones genéricas que no se adaptan a tus necesidades únicas. Nosotros creamos una aplicación móvil diseñada exclusivamente para tu empresa, reflejando tu identidad de marca y ofreciendo las funcionalidades específicas que impulsarán tu éxito. **Desde mejorar la comunicación con tus clientes hasta optimizar los procesos internos de tu equipo, una app personalizada es la llave para destacar en un mercado cada vez más competitivo.**</p>
+                    <p><strong>¿Listo para dar el salto a la movilidad inteligente y llevar tu negocio al siguiente nivel? ¡Descubre cómo una aplicación móvil personalizada puede transformar tu empresa!</strong></p>
+                </div>
+            </div>
+
+            <div id="caracteristicas-app" class="section">
+                <h2>Funcionalidades que Impulsan tu Negocio, Directo al Móvil</h2>
+                <ul class="proceso-lista">
+                    <li><strong>Experiencia de Usuario (UX) Intuitiva y Personalizada:</strong> Diseñamos interfaces atractivas y fáciles de usar que se adaptan a la identidad de tu marca y a las necesidades de tus usuarios.</li>
+                    <li><strong>Comunicación Directa y en Tiempo Real:</strong> Envía notificaciones push personalizadas, mensajes directos y mantén a tus usuarios informados sobre novedades, promociones y actualizaciones importantes.</li>
+                    <li><strong>Acceso a Servicios y Productos en Cualquier Momento:</strong> Facilita a tus clientes la exploración de tu catálogo, la realización de compras o la solicitud de servicios desde sus dispositivos móviles.</li>
+                    <li><strong>Integración con Sistemas Existentes:</strong> Conectamos la aplicación con tu CRM, ERP u otras plataformas para un flujo de datos eficiente y una gestión centralizada.</li>
+                    <li><strong>Geolocalización y Servicios Basados en la Ubicación:</strong> Ofrece promociones especiales a los usuarios cercanos, proporciona información relevante según su ubicación o facilita la navegación a tus establecimientos.</li>
+                    <li><strong>Fidelización y Programas de Lealtad Móviles:</strong> Implementa sistemas de recompensas, cupones digitales y programas de fidelización para incentivar la repetición de compra y fortalecer la relación con tus clientes.</li>
+                    <li><strong>Soporte al Cliente Móvil:</strong> Ofrece canales de atención al cliente directos a través de la aplicación, como chat en vivo, preguntas frecuentes o acceso a tu equipo de soporte.</li>
+                    <li><strong>Analítica y Seguimiento del Comportamiento del Usuario:</strong> Obtén información valiosa sobre cómo interactúan tus usuarios con la aplicación para optimizar su rendimiento y la experiencia general.</li>
+                    <li><strong>Seguridad Robusta y Protección de Datos:</strong> Implementamos las mejores prácticas de seguridad para garantizar la protección de la información de tus usuarios y de tu empresa.</li>
+                    <li><strong>Compatibilidad Multiplataforma (iOS y Android):</strong> Desarrollamos aplicaciones que funcionan perfectamente en los principales sistemas operativos móviles.</li>
+                </ul>
+                <p><strong>Cada funcionalidad se diseña a medida para satisfacer tus objetivos empresariales y las necesidades específicas de tus clientes. ¡Las posibilidades son infinitas!</strong></p>
+            </div>
+
+            <div id="beneficios-app" class="section">
+                <h2>Despega hacia el Futuro: Beneficios de una App Personalizada</h2>
+                <ul class="proceso-lista">
+                    <li><strong>Mayor Alcance y Visibilidad de Marca:</strong> Llega directamente a tus clientes en sus dispositivos más personales, aumentando la presencia y el reconocimiento de tu marca.</li>
+                    <li><strong>Mejora la Comunicación y el Engagement con los Clientes:</strong> Fomenta una interacción más directa y personalizada, construyendo relaciones más sólidas y duraderas.</li>
+                    <li><strong>Aumenta las Ventas y la Conversión:</strong> Facilita el proceso de compra y ofrece promociones exclusivas a través de la aplicación, impulsando tus ingresos.</li>
+                    <li><strong>Optimización de Procesos Internos:</strong> Desarrolla aplicaciones para mejorar la eficiencia de tu equipo, automatizar tareas y facilitar la comunicación interna.</li>
+                    <li><strong>Fortalece la Lealtad del Cliente:</strong> Ofrece una experiencia de usuario excepcional y recompensas por su fidelidad, incentivando la repetición de compra.</li>
+                    <li><strong>Obtén Información Valiosa sobre tus Usuarios:</strong> Analiza el comportamiento dentro de la aplicación para comprender mejor sus necesidades y preferencias.</li>
+                    <li><strong>Diferenciación de la Competencia:</strong> Ofrece una herramienta innovadora y personalizada que te destaca en tu mercado.</li>
+                    <li><strong>Mejora la Satisfacción del Cliente:</strong> Brinda acceso fácil y rápido a tus servicios, productos e información de soporte.</li>
+                </ul>
+                <p><strong>Una aplicación móvil personalizada no es solo una herramienta, es una inversión estratégica que impulsa el crecimiento y la modernización de tu negocio.</strong></p>
+            </div>
+
+            <div id="proceso-app" class="section">
+                <h2>Creamos la App Perfecta para Ti: Nuestro Proceso Personalizado</h2>
+                <div class="seccion-imagen-izquierda">
+                    <div class="sird-imagen">
+                        <img src="app.png" alt="Proceso de Desarrollo de Aplicación Móvil">
+                    </div>
+                    <div class="sird-texto2">
+                        <p>Nuestro proceso de desarrollo de aplicaciones móviles personalizadas se centra en tus necesidades y objetivos:</p>
+                        <ol>
+                            <li><strong>Análisis y Planificación:</strong> Entendemos a fondo tu negocio, tus clientes y tus requisitos para definir la estrategia y las funcionalidades clave de la aplicación.</li>
+                            <li><strong>Diseño UX/UI:</strong> Creamos una interfaz intuitiva, atractiva y alineada con tu identidad de marca, enfocándonos en la mejor experiencia para tus usuarios.</li>
+                            <li><strong>Desarrollo:</strong> Nuestro equipo de expertos desarrolla la aplicación utilizando las tecnologías más adecuadas para garantizar su rendimiento y escalabilidad.</li>
+                            <li><strong>Pruebas Rigurosas:</strong> Realizamos pruebas exhaustivas en diferentes dispositivos y escenarios para asegurar la calidad y la funcionalidad de la aplicación.</li>
+                            <li><strong>Implementación y Lanzamiento:</strong> Te acompañamos en el proceso de publicación de la aplicación en las tiendas (App Store y Google Play).</li>
+                            <li><strong>Soporte y Mantenimiento Continuo:</strong> Ofrecemos servicios de soporte técnico y actualizaciones para asegurar el funcionamiento óptimo de tu aplicación a largo plazo.</li>
+                        </ol>
+                        <p><strong>Tu visión es nuestra guía. Trabajamos en estrecha colaboración contigo en cada etapa del proceso para crear la aplicación móvil perfecta para tu empresa.</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contacto-app" class="section">
+                <h2>¡Lleva tu Negocio al Siguiente Nivel Móvil! Solicita una Consulta Gratuita sobre tu Aplicación Personalizada:</h2>
+                <p>¿Estás listo para explorar el potencial de una aplicación móvil diseñada exclusivamente para tu empresa?</p>
+                <p><strong>¡Contáctanos hoy mismo para una consulta gratuita y sin compromiso! Nuestro equipo te ayudará a definir tus necesidades y a dar el primer paso hacia la movilidad inteligente. ¡El futuro de tu negocio está en tus manos (y en las de tus clientes)!</strong></p>
+                <br>
+                <button class="boton-destacado" id="boton-contacto-app">¡Quiero una Consulta Gratuita!</button>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const botonContactoApp = document.getElementById('boton-contacto-app');
+
+                        if (botonContactoApp) {
+                            botonContactoApp.addEventListener('click', function() {
+                                // Aquí debes especificar la URL de tu página de contacto o formulario de solicitud de consulta para aplicaciones móviles
+                                window.location.href = 'contacto.html?producto=aplicacion-movil&accion=solicitar-consulta'; // Ejemplo persuasivo
+                            });
+                        }
+                    });
+                </script>
+            </div>
+        </main>
+        <div class="overlay" id="mobile-overlay"></div>
+    </div>
+    <script src="diseño-web.js"></script>
+    <script>
+        // Función para volver a la página anterior (productos.html)
+        function goBack() {
+            window.location.href = 'productos.html';
+        }
+    </script>
+</body>
+</html>

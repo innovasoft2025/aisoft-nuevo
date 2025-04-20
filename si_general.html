@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Información a Medida: ¡Potencia Cada Área de tu Negocio!</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="diseño-web.css">
+    <link rel="stylesheet" href="portada.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <button class="mobile-menu-btn" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="dashboard">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="teacher-avatar">
+                    <img src="logoaisoft.png" alt="Logo de tu emprendimiento">
+                </div>
+                <h2>Sistemas de Información General</h2>
+                
+            </div>
+            <ul class="menu-items">
+                <li class="active" onclick="showSection('inicio-generales')">
+                    <i class="fas fa-database menu-icon"></i>
+                    <span>¿Qué es un Sistema de Información y por qué lo Necesitas?</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('beneficios-generales')">
+                    <i class="fas fa-rocket menu-icon"></i>
+                    <span>Maximiza el Rendimiento de tu Negocio</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('gestion-generales')">
+                    <i class="fas fa-tasks menu-icon"></i>
+                    <span>Optimiza la Gestión de tus Procesos</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('clientes-generales')">
+                    <i class="fas fa-users menu-icon"></i>
+                    <span>Captación y Fidelización de Clientes Inteligente</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('informacion-generales')">
+                    <i class="fas fa-lightbulb menu-icon"></i>
+                    <span>El Poder del Manejo Inteligente de la Información</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('implementacion-generales')">
+                    <i class="fas fa-cogs menu-icon"></i>
+                    <span>Implementación a tu Medida</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('contacto-generales')">
+                    <i class="fas fa-handshake menu-icon"></i>
+                    <span>¡Transforma tu Negocio con Información!</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="goBack()">
+                    <i class="fas fa-arrow-left menu-icon"></i>
+                    <span>Volver a servicios</span>
+                    <div class="hover-effect"></div>
+                </li>
+                
+                <script>
+                    // Función para volver a la página anterior (productos.html)
+                    function goBack() {
+                        window.location.href = 'servicio2.html';
+                    }
+                </script>
+
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div id="inicio-generales" class="section active-section">
+                <div class="servicio-banner">
+                    <h1>Sistemas de Información a Medida: La Inteligencia Detrás del Éxito Empresarial</h1>
+                    <p>¿Te preguntas cómo las empresas líderes optimizan sus operaciones, toman decisiones estratégicas y se conectan de manera efectiva con sus clientes? La respuesta está en los Sistemas de Información. Un Sistema de Información es mucho más que un software; es una solución integral que recopila, procesa, almacena y distribuye información vital para el funcionamiento y el crecimiento de tu negocio.</p>
+                    <p><strong>Si aún gestionas tu empresa con métodos dispersos y manuales, estás perdiendo oportunidades cruciales. ¡Descubre cómo un Sistema de Información a medida puede convertirse en el cerebro de tu negocio, impulsando la eficiencia y revelando el potencial oculto de tus datos!</strong></p>
+                </div>
+
+                <div class="beneficios-grid">
+                    <div class="beneficio-card">
+                        <h3>Visión Clara del Negocio</h3>
+                        <p>Obtén una perspectiva integral de todas las áreas de tu empresa a través de informes y análisis unificados.</p>
+                    </div>
+                    <div class="beneficio-card">
+                        <h3>Decisiones Estratégicas Inteligentes</h3>
+                        <p>Basándote en datos precisos y oportunos, podrás tomar decisiones informadas que impulsen el crecimiento y la rentabilidad.</p>
+                    </div>
+                    <div class="beneficio-card">
+                        <h3>Aumento de la Eficiencia Operacional</h3>
+                        <p>Automatiza tareas, optimiza flujos de trabajo y reduce los errores, liberando recursos valiosos.</p>
+                    </div>
+                    <div class="beneficio-card">
+                        <h3>Mejora en la Comunicación Interna</h3>
+                        <p>Facilita el flujo de información entre departamentos y equipos, promoviendo la colaboración y la sinergia.</p>
+                    </div>
+                    <div class="beneficio-card">
+                        <h3>Mayor Agilidad y Adaptabilidad</h3>
+                        <p>Un sistema flexible te permite responder rápidamente a los cambios del mercado y a las nuevas oportunidades.</p>
+                    </div>
+                    <div class="beneficio-card">
+                        <h3>Ventaja Competitiva Sostenible</h3>
+                        <p>Una gestión de la información superior te diferencia de la competencia y te posiciona como líder en tu sector.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="beneficios-generales" class="section">
+                <h2>Maximiza el Rendimiento de tu Negocio con un Sistema de Información a Medida:</h2>
+                <ul class="proceso-lista">
+                    <li><strong>Optimización de Costos:</strong> Reduce gastos operativos al automatizar tareas y mejorar la eficiencia.</li>
+                    <li><strong>Aumento de la Productividad:</strong> Permite que tu equipo se enfoque en actividades de mayor valor estratégico.</li>
+                    <li><strong>Mejora de la Satisfacción del Cliente:</strong> Ofrece un servicio más rápido, personalizado y eficiente.</li>
+                    <li><strong>Identificación de Nuevas Oportunidades:</strong> Analiza tendencias y patrones en tus datos para descubrir nichos de mercado.</li>
+                    <li><strong>Gestión de Riesgos Eficaz:</strong> Monitorea indicadores clave para identificar y mitigar posibles problemas.</li>
+                </ul>
+                <p><strong>¡No dejes que la falta de información te detenga! Un Sistema de Información a medida es la inversión inteligente para el crecimiento sostenido de tu negocio.</strong></p>
+            </div>
+
+            <div id="gestion-generales" class="section">
+                <h2>Optimiza la Gestión de tus Procesos con un Sistema de Información Integrado:</h2>
+                <ul class="proceso-lista">
+                    <li><strong>Automatización de Flujos de Trabajo:</strong> Desde la gestión de inventario hasta la facturación.</li>
+                    <li><strong>Mejora de la Coordinación Interdepartamental:</strong> Información compartida y procesos sincronizados.</li>
+                    <li><strong>Reducción de Cuellos de Botella:</strong> Identifica y elimina ineficiencias en tus operaciones.</li>
+                    <li><strong>Mayor Control y Visibilidad:</strong> Seguimiento en tiempo real del estado de tus procesos.</li>
+                    <li><strong>Adaptabilidad a tus Necesidades Específicas:</strong> Un sistema diseñado para tu forma de trabajar.</li>
+                </ul>
+                <p><strong>¡Imagina un negocio donde cada proceso fluye sin problemas, impulsado por la información correcta en el momento adecuado!</strong></p>
+            </div>
+
+            <div id="clientes-generales" class="section">
+                    <div class="seccion-imagen-izquierda">
+                        <div class="sird-imagen">
+                            <img src="gestion_clientes.png" alt="Gestión de Clientes con Sistema de Información">
+                        </div>
+                        <div class="sird-texto2">
+                            <h2>Gestión Inteligente de tus Clientes</h2>
+                            <p>No dejes que las oportunidades se escapen. Un Sistema de Información te proporciona las herramientas para conocer a tus clientes a fondo, personalizar tus interacciones y construir relaciones duraderas que impulsen el crecimiento de tu negocio.</p>
+                            <ul>
+                                <li>Atrae nuevos clientes de manera más efectiva identificando patrones y oportunidades.</li>
+                                <li>Aumenta la lealtad de tus clientes ofreciendo experiencias personalizadas y un servicio excepcional.</li>
+                                <li>Optimiza tus estrategias de marketing y ventas basándote en datos concretos sobre el comportamiento de tus clientes.</li>
+                            </ul>
+                            <p>¡Contáctanos y descubre cómo un Sistema de Información puede transformar la forma en que te relacionas con tus clientes!</p>
+                            <br>
+                            <button class="boton-destacado" id="boton-contacto-clientes">Contáctanos</button>
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    const botonContactoClientes = document.getElementById('boton-contacto-clientes');
+    
+                                    if (botonContactoClientes) {
+                                        botonContactoClientes.addEventListener('click', function() {
+                                            // Aquí debes especificar la URL de tu página de contacto
+                                            window.location.href = 'contacto.html';
+                                        });
+                                    }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                
+
+                
+            </div>
+            <div id="informacion-generales" class="section">
+                <div class="seccion-imagen-izquierda">
+                    <div class="sird-imagen">
+                        <img src="analitica.png" alt="Análisis Inteligente de la Información">
+                    </div>
+                    <div class="sird-texto2">
+                        <h2>Desbloquea Insights Valiosos con tu Información</h2>
+                        <p>No dejes que tus datos se queden en simples registros. Un Sistema de Información te permite transformar esa información en conocimiento estratégico, revelando tendencias, oportunidades y áreas de mejora para impulsar el éxito de tu negocio.</p>
+                        <ul>
+                            <li><strong>Almacenamiento Seguro y Organizado:</strong> Ten la tranquilidad de que tus datos críticos están protegidos y son fácilmente accesibles cuando los necesitas.</li>
+                            <li><strong>Análisis Avanzado de Datos:</strong> Descubre patrones ocultos y tendencias clave para tomar decisiones más informadas y estratégicas.</li>
+                            <li><strong>Informes Personalizados y Visualizaciones:</strong> Obtén la información precisa que necesitas, presentada de forma clara y comprensible para una mejor toma de decisiones.</li>
+                            <li><strong>Integración de Datos Unificada:</strong> Consolida la información de diferentes áreas de tu negocio para obtener una visión completa y coherente.</li>
+                            <li><strong>Mejora Continua Basada en Evidencia:</strong> Utiliza los datos para medir el rendimiento, identificar áreas de mejora y optimizar continuamente tus estrategias.</li>
+                        </ul>
+                        <p>¡Contáctanos y descubre el verdadero poder que reside en la información de tu negocio!</p>
+                        <br>
+                        <button class="boton-destacado" id="boton-contacto-info">Contáctanos</button>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const botonContactoInfo = document.getElementById('boton-contacto-info');
+    
+                                if (botonContactoInfo) {
+                                    botonContactoInfo.addEventListener('click', function() {
+                                        // Aquí debes especificar la URL de tu página de contacto
+                                        window.location.href = 'contacto.html';
+                                    });
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div id="implementacion-generales" class="section">
+                <h2>Implementamos Sistemas de Información a tu Medida de Forma Estratégica:</h2>
+                <ol class="proceso-lista">
+                    <li><strong>Análisis Profundo de tu Negocio y Necesidades de Información:</strong> Entendemos tus desafíos y objetivos.</li>
+                    <li><strong>Diseño y Planificación Detallada del Sistema:</strong> Creamos una solución que se integra perfectamente con tu operación.</li>
+                    <li><strong>Desarrollo y Pruebas Rigurosas:</strong> Aseguramos la funcionalidad, seguridad y rendimiento del sistema.</li>
+                    <li><strong>Migración de Datos Segura y Eficiente:</strong> Trasladamos tu información crítica sin pérdida ni interrupciones.</li>
+                    <li><strong>Capacitación Integral de tu Equipo:</strong> Garantizamos que tu personal pueda aprovechar al máximo el nuevo sistema.</li>
+                    <li><strong>Soporte y Mantenimiento Continuo:</strong> Te acompañamos en cada paso para asegurar el éxito a largo plazo.</li>
+                </ol>
+                <p><strong>¡Confía en nuestra experiencia para implementar el sistema de información que llevará a tu negocio al siguiente nivel!</strong></p>
+            </div>
+
+            <div id="contacto-generales" class="section">
+                <h2>¡Es Hora de Desbloquear el Potencial de tu Información! Contáctanos:</h2>
+                <p>¿Listo para transformar tu negocio con un Sistema de Información a medida? ¡Estamos aquí para guiarte en cada paso!</p>
+                <p>Escríbenos a <a href="mailto:tuemail@tuempresa.com">aisoftsolutions3@gmail.com</a> o completa nuestro <a href="contacto.html">formulario de contacto</a>.</p>
+                <p><strong>¡Invierte en el futuro de tu empresa! ¡Esperamos tu contacto para comenzar a construir juntos la inteligencia que impulsará tu éxito!</strong></p>
+            </div>
+        </main>
+        <div class="overlay" id="mobile-overlay"></div>
+    </div>
+    <script src="diseño-web.js"></script>
+</body>
+</html>

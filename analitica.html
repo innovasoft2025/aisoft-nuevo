@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Analítica de Datos Avanzada - AISOFT: Desbloquea el Poder Oculto en tus Datos</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="diseño-web.css">
+    <link rel="stylesheet" href="portada.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <button class="mobile-menu-btn" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="dashboard">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="teacher-avatar">
+                    <img src="logoaisoft.png" alt="Logo de tu emprendimiento">
+                </div>
+                <h2>Analítica de Datos Avanzada</h2>
+            </div>
+            <ul class="menu-items">
+                <li class="active" onclick="showSection('inicio-analitica')">
+                    <i class="fas fa-chart-pie menu-icon"></i>
+                    <span>¿Tus Datos Ocultan Oportunidades? Descúbrelo con nuestra Plataforma</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('caracteristicas-analitica')">
+                    <i class="fas fa-lightbulb menu-icon"></i>
+                    <span>Insights que Impulsan el Crecimiento: Características Poderosas</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('beneficios-analitica')">
+                    <i class="fas fa-tachometer-alt menu-icon"></i>
+                    <span>Velocidad, Precisión, Estrategia: Beneficios para tu Éxito</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('casos-uso-analitica')">
+                    <i class="fas fa-project-diagram menu-icon"></i>
+                    <span>Más que Números: Casos de Uso que Inspiran Acción</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="showSection('contacto-analitica')">
+                    <i class="fas fa-handshake menu-icon"></i>
+                    <span>¡Transforma tus Datos en Decisones Inteligentes!</span>
+                    <div class="hover-effect"></div>
+                </li>
+                <li onclick="goBack()">
+                    <i class="fas fa-arrow-left menu-icon"></i>
+                    <span>Volver a Productos</span>
+                    <div class="hover-effect"></div>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div id="inicio-analitica" class="section active-section">
+                <div class="servicio-banner">
+                    <h1>Plataforma de Analítica de Datos Avanzada: Convierte la Información en tu Mayor Ventaja Competitiva</h1>
+                    <p>En el mundo actual, los datos son el nuevo oro. Pero, ¿estás realmente extrayendo todo su valor? Imagina tener la capacidad de comprender las tendencias del mercado antes que nadie, de anticipar las necesidades de tus clientes y de optimizar tus operaciones con una precisión milimétrica. Nuestra Plataforma de Analítica de Datos Avanzada te proporciona las herramientas para **desbloquear el poder oculto en tus datos y transformarlos en insights estratégicos que impulsarán el crecimiento y la rentabilidad de tu negocio.**</p>
+                    <p>Deja de basar tus decisiones en la intuición. Con nuestra plataforma, tendrás acceso a análisis profundos, visualizaciones intuitivas y modelos predictivos que te permitirán **tomar decisiones más informadas, identificar nuevas oportunidades y mitigar riesgos de manera proactiva.**</p>
+                    <p><strong>¿Listo para dejar de navegar a ciegas y comenzar a tomar decisiones basadas en la inteligencia de tus datos? ¡Descubre cómo nuestra plataforma puede revolucionar tu estrategia empresarial!</strong></p>
+                </div>
+            </div>
+
+            <div id="caracteristicas-analitica" class="section">
+                <h2>Insights que Impulsan el Crecimiento: Características Poderosas</h2>
+                <ul class="proceso-lista">
+                    <li><strong>Conexión con Múltiples Fuentes de Datos:</strong> Integra datos de diversas plataformas (CRM, ERP, redes sociales, web, etc.) en un solo lugar para una visión unificada.</li>
+                    <li><strong>Procesamiento y Limpieza de Datos Robusto:</strong> Asegura la calidad y la precisión de tus datos para obtener análisis confiables.</li>
+                    <li><strong>Visualizaciones Interactivas y Personalizables:</strong> Transforma datos complejos en gráficos y dashboards fáciles de entender para identificar patrones y tendencias rápidamente.</li>
+                    <li><strong>Análisis Predictivo Avanzado:</strong> Utiliza modelos de machine learning para predecir tendencias futuras, comportamientos de clientes y posibles riesgos.</li>
+                    <li><strong>Análisis en Tiempo Real:</strong> Obtén insights actualizados al instante para reaccionar rápidamente a los cambios del mercado.</li>
+                    <li><strong>Segmentación Avanzada:</strong> Identifica grupos específicos de clientes o usuarios basados en múltiples variables para campañas de marketing y ventas más efectivas.</li>
+                    <li><strong>Alertas y Notificaciones Inteligentes:</strong> Configura alertas personalizadas para ser notificado sobre métricas clave o anomalías en tus datos.</li>
+                    <li><strong>Colaboración y Compartición Segura:</strong> Permite que diferentes equipos accedan y trabajen con los mismos datos de manera segura.</li>
+                    <li><strong>Integración con Herramientas de BI Existentes:</strong> Complementa tus herramientas actuales con nuestras capacidades avanzadas de análisis.</li>
+                </ul>
+                <p><strong>Cada característica está diseñada para convertir tus datos brutos en inteligencia procesable, dándote una comprensión profunda de tu negocio y tu mercado.</strong></p>
+            </div>
+
+            <div id="beneficios-analitica" class="section">
+                <h2>Velocidad, Precisión, Estrategia: Beneficios para tu Éxito</h2>
+                <ul class="proceso-lista">
+                    <li><strong>Toma de Decisiones más Informada y Ágil:</strong> Basándote en datos concretos y análisis predictivos, reacciona rápidamente a las oportunidades y desafíos.</li>
+                    <li><strong>Identificación de Nuevas Oportunidades de Mercado:</strong> Descubre nichos inexplorados y tendencias emergentes para expandir tu negocio.</li>
+                    <li><strong>Optimización de Procesos y Reducción de Costos:</strong> Identifica ineficiencias y áreas de mejora para optimizar tus operaciones y reducir gastos.</li>
+                    <li><strong>Mejora de la Experiencia del Cliente:</strong> Comprende mejor las necesidades y preferencias de tus clientes para ofrecer productos y servicios más personalizados.</li>
+                    <li><strong>Aumento de la Eficacia de las Campañas de Marketing y Ventas:</strong> Dirige tus esfuerzos a los segmentos de audiencia más relevantes y mide el impacto de tus acciones.</li>
+                    <li><strong>Mitigación de Riesgos y Detección de Anomalías:</strong> Identifica patrones inusuales en tus datos que podrían indicar problemas o fraudes.</li>
+                    <li><strong>Ventaja Competitiva Sostenible:</strong> Utiliza tus datos para innovar y diferenciarte de la competencia.</li>
+                </ul>
+                <p><strong>Deja de adivinar el futuro de tu negocio. Empieza a predecirlo y a moldearlo con el poder de la analítica de datos avanzada.</strong></p>
+            </div>
+
+            <div id="casos-uso-analitica" class="section">
+                <h2>Más que Números: Casos de Uso que Inspiran Acción</h2>
+                <div class="seccion-imagen-izquierda">
+                    <div class="sird-imagen">
+                        <img src="analtica2.png" alt="Casos de Uso de Analítica de Datos">
+                    </div>
+                    <div class="sird-texto2">
+                        <p>Descubre cómo otras empresas están transformando sus resultados con nuestra plataforma de analítica de datos:</p>
+                        <ul>
+                            <li><strong>Optimización de la Cadena de Suministro:</strong> Predicción de la demanda para reducir costos de inventario y mejorar la eficiencia logística.</li>
+                            <li><strong>Personalización de la Experiencia del Cliente en E-commerce:</strong> Recomendaciones de productos basadas en el comportamiento de navegación y compra.</li>
+                            <li><strong>Detección de Fraude en el Sector Financiero:</strong> Identificación de patrones sospechosos en transacciones para prevenir pérdidas.</li>
+                            <li><strong>Mejora del Rendimiento de Campañas de Marketing Digital:</strong> Análisis del ROI de diferentes canales y optimización de la inversión publicitaria.</li>
+                            <li><strong>Mantenimiento Predictivo en la Industria:</strong> Identificación de posibles fallos en equipos antes de que ocurran, reduciendo el tiempo de inactividad.</li>
+                        </ul>
+                        <p><strong>Estos son solo algunos ejemplos del potencial ilimitado de la analítica de datos avanzada aplicada a tu negocio.</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contacto-analitica" class="section">
+                <h2>¡Transforma tus Datos en Decisiones Inteligentes! Solicita una Demostración Personalizada de nuestra Plataforma:</h2>
+                <p>¿Estás listo para desbloquear el valor oculto en tus datos y tomar decisiones que impulsen el crecimiento de tu negocio?</p>
+                <p><strong>¡Contáctanos hoy mismo para solicitar una demostración personalizada y descubre cómo nuestra Plataforma de Analítica de Datos Avanzada puede convertirse en tu mayor activo estratégico!</strong></p>
+                <br>
+                <button class="boton-destacado" id="boton-contacto-analitica">¡Quiero una Demostración!</button>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const botonContactoAnalitica = document.getElementById('boton-contacto-analitica');
+
+                        if (botonContactoAnalitica) {
+                            botonContactoAnalitica.addEventListener('click', function() {
+                                // Aquí debes especificar la URL de tu página de contacto o formulario de solicitud de demostración para analítica
+                                window.location.href = 'contacto.html?producto=analitica-avanzada&accion=solicitar-demo'; // Ejemplo con parámetros persuasivos
+                            });
+                        }
+                    });
+                </script>
+            </div>
+        </main>
+        <div class="overlay" id="mobile-overlay"></div>
+    </div>
+    <script src="diseño-web.js"></script>
+    <script>
+        // Función para volver a la página anterior (productos.html)
+        function goBack() {
+            window.location.href = 'productos.html';
+        }
+    </script>
+</body>
+</html>

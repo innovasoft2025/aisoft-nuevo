@@ -1,0 +1,255 @@
+/* ver.css (Modificado) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-height: 120px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.hero {
+    background: linear-gradient(135deg, #e0f7fa, #c5cae9);
+    padding: 60px 20px 100px; /* Aumentamos el padding inferior para dar espacio a la ola */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centramos el contenido verticalmente */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    min-height: 400px; /* Aseguramos una altura mínima para el contenedor */
+}
+
+.hero-content {
+    max-width: 700px;
+    margin-bottom: 40px; /* Espacio entre el texto y la ola */
+    position: relative; /* Asegura que el contenido esté encima de la ola (z-index) */
+    z-index: 10;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    position: absolute;
+    bottom: 0; /* Pegamos la ola a la parte inferior */
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1; /* Aseguramos que la ola esté debajo del contenido */
+}
+
+.hero-image svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#ai-wave {
+    transform-origin: center bottom;
+}
+
+.why-ai {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.why-ai h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.why-ai-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.why-ai-item {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.why-ai-item .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.why-ai-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.why-ai-item p {
+    color: #555;
+}
+
+.aisoft-advantage {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.aisoft-advantage h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.advantage-item {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.advantage-item .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.advantage-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.advantage-item p {
+    color: #555;
+}
+
+.cta-button.secondary {
+    background-color: #28a745;
+}
+
+.cta-button.secondary:hover {
+    background-color: #1e7e34;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-top: 10px;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 40px 20px 120px; /* Ajustamos el padding inferior en pantallas pequeñas */
+        min-height: auto; /* Permitimos que la altura se ajuste al contenido */
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .why-ai-grid, .advantage-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-ai-item, .advantage-item {
+        padding: 20px;
+    }
+
+    .hero-content {
+        margin-bottom: 60px; /* Más espacio en pantallas pequeñas */
+    }
+}
+
+/* SVG Animation Keyframes (Oscilación más sutil y lenta) */
+@keyframes waveAnimation {
+    0% {
+        transform: translateY(0) scaleX(1);
+    }
+    50% {
+        transform: translateY(-5px) scaleX(1.01); /* Menos oscilación vertical y horizontal */
+    }
+    100% {
+        transform: translateY(0) scaleX(1);
+    }
+}
+
+/* Apply animation to the wave */
+#ai-wave {
+    animation: waveAnimation 7s infinite ease-in-out; /* Animación más lenta */
+}
